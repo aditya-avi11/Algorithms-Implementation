@@ -15,7 +15,8 @@ int main() {
                 flag=1;
             }
         }
-        if(flag==0) { printf("Array already sorted!\n"); break; }
+        //if flag is 0 after first iteration, it indicates the array is already sorted, so we break & return
+        if(flag==0) { printf("Array already sorted!\n"); break; } 
     }
 
     for(int i=0; i<n; i++) {
