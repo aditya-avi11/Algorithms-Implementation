@@ -1,7 +1,7 @@
 def prims_algorithm(graph):
     num_nodes = len(graph)
-    V_T = set()
-    E_T = []
+    V_T = set()   # A set that will store the vertices included in the MST
+    E_T = []      # A list that will store the edges (with their weights) that are part of the MST
     
     # Start from vertex 0
     V_T.add(0)
