@@ -19,9 +19,8 @@ def union(parent, rank, u, v):
 def kruskal_sort_edges(adj_matrix):
     edges = []
     n = len(adj_matrix)
-    
     for i in range(n):
-        for j in range(i + 1, n):
+        for j in range(i + 1, n):   # i + 1, ensures that each edge is considered only once, since bidirectional edges, hence check only upper triangle of adjMatrix
             if adj_matrix[i][j] != 0:
                 edges.append((adj_matrix[i][j], i, j))
     
